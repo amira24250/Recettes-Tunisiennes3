@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cette page vous est dédiée, cher utilisateur</title>
+    <link rel="icon" type="image/png" href="DESIMAGES/newlogo.jpg">
+    <link rel="stylesheet" href="cochese.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenue, cher utilisateur</h1> 
+    </header>
+
+    <nav>
+   
+        <ul>
+            <li><a href="#coordonnees">Vos coordonnées</a></li>
+            <li><a href="#aliments">Aliments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="coordonnees">
+        <fieldset>
+            <h2>Vos coordonnées</h2>
+            <form method="post" action="traitement.php">
+                <label for="nom">Quel est votre nom Cher utilisateur ?</label>
+                <input type="text" name="nom" id="nom">
+
+                <label for="prenom">Quel est votre prénom Cher utilisateur?</label>
+                <input type="text" name="prenom" id="prenom">
+
+                <label for="email">Quel est votre e-mail Cher utilisateur?</label>
+                <input type="email" name="email" id="email">
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </fieldset>
+    </section>
+    <section id="age">
+        <fieldset>
+            <h2>Quel âge as-tu, cher utilisateur ?</h2>
+            <input type="radio" name="age" value="moins15" id="moins15">
+            <label for="moins15">Moins de 15 ans</label><br>
+            <input type="radio" name="age" value="medium15-25" id="medium15-25">
+            <label for="medium15-25">15-25 ans</label><br>
+            <input type="radio" name="age" value="medium25-40" id="medium25-40">
+            <label for="medium25-40">25-40 ans</label>
+        </fieldset>
+    </section>
+
+    <section id="aliments">
+        <form method="post" action="traitement.php">
+            <fieldset>
+                <h2>Cochez les aliments que vous aimez manger</h2>
+                <input type="checkbox" name="frites" id="frites1">
+                <label for="frites1">Les plats les plus populaires comme :🥗🥩🍜🍝🍲 : couscous tunisien, pois chiches grillés c'est le "lablebi" ....</label><br >
+                <input type="checkbox" name="steak" id="steak1">
+                <label for="steak1">Les plats de desserts comme : 🥞🧇🍪🍰🧁 le baklawa , Makroud .....</label><br>
+                <input type="checkbox" name="epinards" id="epinards1">
+                <label for="epinards1">Les boissons froides comme : 🍹🧊🍷🍸🥤 Rouzata amande, jus banane, dattes et fruits secs ....</label><br >
+                <input type="checkbox" name="huitres" id="huitres1">
+                <label for="huitres1">Les boissons chaudes comme : 🍵☕🥛🧋Thé aux noisettes , café Turc...</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Écrivez votre plat préféré</legend>
+                <input type="text" name="plat_prefere" id="plat_prefere" autofocus>
+            </fieldset>
+
+            <fieldset>
+                <legend>Que préférez-vous manger, épicé ou sucré ?</legend>
+                <input type="radio" name="saveur" value="epice" id="epice">
+                <label for="epice">Épicé</label><br>
+                <input type="radio" name="saveur" value="sucre" id="sucre">
+                <label for="sucre">Sucré</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aimez-vous manger les plats avec du fromage ?</legend>
+                <input type="radio" name="fromage" value="oui" id="fromage_oui">
+                <label for="fromage_oui">Oui</label><br>
+                <input type="radio" name="fromage" value="non" id="fromage_non">
+                <label for="fromage_non">Non</label><br>
+                <input type="radio" name="fromage" value="beaucoup" id="fromage_beaucoup">
+                <label for="fromage_beaucoup">Oui, j'en veux beaucoup</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vous aimez les plats avec du chocolat ?</legend>
+                <input type="radio" name="chocolat" value="oui" id="chocolat_oui">
+                <label for="chocolat_oui">Oui</label><br>
+                <input type="radio" name="chocolat" value="non" id="chocolat_non">
+                <label for="chocolat_non">Non</label><br>
+                <input type="radio" name="chocolat" value="beaucoup" id="chocolat_beaucoup">
+                <label for="chocolat_beaucoup">Oui, j'en veux beaucoup</label><br>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="contact">
+       
+        <form action="send_email.php" method="POST">
+            <label for="message">Ton commentaire :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Envoyer le commentaire</button>
+        </form>
+        <h5>Contactez-moi</h5>
+        
+            <h2>Si vous souhaitez me contacter, envoyez-moi un email :</h2>
+            <a href="mailto:sassiamira052@gmail.com">votre-email</a>
+    
+
+        <a href="accueil.html" target="_blank">La page suivante</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Votre site. Tous droits réservés.</p>
+    </footer>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

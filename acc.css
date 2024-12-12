@@ -1,0 +1,289 @@
+body {
+    background-color: #FFF8DC;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    /* خط حديث وسهل القراءة */
+    font-size: 1.5em;
+    /* حجم النص (تصغير قليلاً عن h1) */
+    color: #8B4513;
+    /* لون بني دافئ */
+    letter-spacing: 2px;
+    /* توسيع المسافات بين الحروف */
+    padding: 5px;
+    /* تقليل المسافة داخل الإطار */
+    border: 2px dashed #CD853F;
+    /* إطار منقط */
+    border-radius: 8px;
+    /* زوايا مستديرة */
+    background-color: #FFF8DC;
+    /* خلفية خفيفة */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    /* ظل خفيف */
+    text-transform: uppercase;
+    /* تحويل النص إلى أحرف كبيرة */
+    display: inline-block;
+    /* تصغير المربع المحيط ليكون بنفس حجم النص */
+    margin: 10px 0;
+    /* إضافة مسافة أعلى وأسفل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* تأثير حركة عند التفاعل */
+}
+
+/* تأثير التفاعل عند التمرير */
+h2:hover {
+    transform: scale(1.03);
+    /* تكبير النص قليلاً */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    /* زيادة الظل */
+}
+
+
+
+
+h1 {
+    font-family: 'Georgia', serif;
+    /* خط أنيق */
+    font-size: 2.5em;
+    /* حجم النص */
+    color: #B22222;
+    /* لون النص */
+    text-align: center;
+    /* توسيط النص */
+    background: linear-gradient(to right, #FF6347, #FFD700);
+    /* تدرج ألوان كخلفية للنص */
+    -webkit-background-clip: text;
+    /* تقطيع الخلفية بالنص (لمتصفحات تدعم Webkit) */
+    -webkit-text-fill-color: transparent;
+    /* جعل النص شفافًا لإظهار الخلفية */
+    padding: 10px;
+    border-bottom: 4px solid #B22222;
+    /* خط سفلي */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* ظل */
+    animation: glow 1.5s infinite alternate;
+    /* حركة توهج */
+}
+
+
+hr {
+    border: 0;
+    /* إزالة الحدود الافتراضية */
+    height: 2px;
+    /* تحديد سمك الخط */
+    background: linear-gradient(to right, #FF6347, #FFD700);
+    /* تدرج لوني جذاب */
+    margin: 20px 0;
+    /* إضافة مسافة أعلى وأسفل الخط */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* إضافة ظل خفيف أسفل الخط */
+    border-radius: 5px;
+    /* إضافة زوايا مستديرة للخط */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* تأثير حركة */
+}
+
+/* تأثير عند التمرير */
+hr:hover {
+    background: linear-gradient(to right, #FFD700, #FF6347);
+    /* عكس التدرج عند التمرير */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    /* زيادة الظل */
+}
+
+
+
+#a {
+    font-family: 'Arial', sans-serif;
+    /* خط حديث */
+    font-size: 1.1em;
+    /* حجم النص */
+    line-height: 1.8;
+    /* ارتفاع السطر لجعل النص أكثر وضوحًا */
+    color: #555;
+    /* لون رمادي ناعم */
+    margin: 15px 0;
+    /* إضافة مسافة أعلى وأسفل الفقرة */
+    text-align: justify;
+    /* محاذاة النص بحيث يكون مشدودًا من الطرفين */
+    padding: 10px;
+    /* إضافة مسافة داخل الفقرة */
+    background-color: #FFF8DC;
+    /* خلفية خفيفة */
+    border-radius: 8px;
+    /* زوايا مستديرة */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* تأثير عند التفاعل */
+}
+
+/* تأثير عند التمرير فوق الفقرة */
+#a:hover {
+    transform: scale(1.02);
+    /* تكبير الفقرة قليلاً */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    /* زيادة الظل */
+    background-color: #FFE4B5;
+    /* تغيير الخلفية عند التمرير */
+}
+
+h3 {
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    font-size: 2em; /* حجم النص */
+    font-weight: 600; /* وزن النص متوسط */
+    color: #2F4F4F; /* لون النص (رمادي داكن) */
+    text-align: left; /* محاذاة النص إلى اليسار */
+    margin-top: 20px; /* مسافة من الأعلى */
+    margin-bottom: 15px; /* مسافة من الأسفل */
+    padding: 5px; /* مسافة داخلية صغيرة حول النص */
+    background-color: #FAFAD2; /* خلفية بلون أصفر فاتح */
+}
+
+video {
+    width: 85%; /* عرض الفيديو ليغطي العرض الكامل */
+    height: auto; /* ارتفاع الفيديو يتناسب مع العرض */
+    border-radius: 8px; /* زوايا مستديرة */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف حول الفيديو */
+    border: 2px solid #B0C4DE; /* إطار خفيف بلون أزرق فاتح */
+    transition: all 0.3s ease; /* تأثير التمرير */
+    display: block; /* التأكد من عرض الفيديو */
+    margin: 0 auto; /* لجعل الفيديو في المركز */
+}
+
+
+video:hover {
+    transform: scale(1.05); /* تكبير الفيديو قليلًا عند التمرير */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* ظل أقوى عند التمرير */
+}
+
+a {
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+  
+    font-size: 1.2em; /* حجم النص */
+    color: #3498db; /* لون النص الأزرق */
+    text-decoration: none; /* إزالة التسطير تحت النص */
+    padding: 8px 16px; /* مسافة داخلية حول النص */
+    border-radius: 5px; /* زوايا مستديرة */
+    transition: all 0.3s ease; /* تأثير التمرير */
+}
+
+a:hover {
+    background-color: #ecf0f1; /* خلفية فاتحة عند التمرير */
+    color: #2c3e50; /* تغيير لون النص إلى أزرق داكن */
+    transform: translateY(-3px); /* تحريك الرابط للأعلى قليلاً */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
+
+audio {
+    width: 50%; /* عرض كامل للعنصر */
+    border-radius: 5px; /* زوايا مستديرة */
+    border: 1px solid #BDC3C7; /* إطار خفيف */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    transition: all 0.3s ease; /* تأثير التمرير */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h4 {
+    font-family: 'Georgia', serif;
+    /* نوع الخط */
+    font-size: 1.4em;
+    /* حجم النص */
+    font-weight: normal;
+    /* جعل النص عاديًا (غير عريض) */
+    color: #2F4F4F;
+    /* لون النص (رمادي غامق) */
+    text-align: left;
+    /* محاذاة النص إلى اليسار */
+    padding: 8px 15px;
+    /* مسافة داخلية حول النص */
+    margin: 15px 0;
+    /* مسافة أعلى وأسفل العنوان */
+    background-color: #F5F5DC;
+    /* خلفية بلون بيج فاتح */
+    border-left: 5px solid #8B4513;
+    /* إضافة خط عمودي على اليسار */
+    border-radius: 5px;
+    /* زوايا مستديرة */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف */
+    transition: all 0.3s ease;
+    /* تأثير انتقال عند التفاعل */
+}
+
+
+
+
+
+
+
+
+img {
+
+    width: 300px;
+    /* العرض */
+    height: 300px;
+    /* الارتفاع */
+    border-radius: 50%;
+    /* يجعل الصورة دائرية */
+    border: 3px solid #B22222;
+    /* إطار بلون مميز */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /* ظل خفيف */
+}
+img:hover{
+    transform: scale(1.05);
+}
+
+}
+li {
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    font-size: 1.2em; /* حجم النص */
+    color: #333; /* لون النص (أسود داكن) */
+    padding: 8px 0; /* مسافة داخلية على الجانبين العلوي والسفلي */
+    margin: 5px 0; /* مسافة بين العناصر */
+    list-style-type: none; /* إزالة النقاط الافتراضية للقائمة */
+    position: relative; /* تمكين إضافة تأثيرات إضافية */
+}
+
+/* إضافة رمز مخصص للقائمة */
+li::before {
+    content: "✔"; /* رمز مخصص للقائمة */
+    color: #008000; /* لون الرمز (أخضر) */
+    font-size: 1.5em; /* حجم الرمز */
+    position: absolute; /* تحديد موضع الرمز */
+    left: -25px; /* تحريك الرمز إلى اليسار */
+    top: 50%; /* محاذاة الرمز في منتصف العنصر */
+    transform: translateY(-50%); /* تحسين المحاذاة عموديًا */
+}
+
+/* تأثير عند التمرير فوق العنصر */
+li:hover {
+    background-color: #F0F8FF; /* تغيير الخلفية عند التمرير */
+    color: #00008B; /* تغيير لون النص */
+    padding-left: 20px; /* إضافة مسافة داخلية عند التمرير */
+    transition: all 0.3s ease; /* تأثير الانتقال */
+}
+.m{
+    
+        font-family: 'Arial', sans-serif; /* نوع الخط */
+        font-size: 1.2em; /* حجم النص */
+        color: #333333; /* لون النص */
+}
+    
+    

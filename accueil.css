@@ -1,0 +1,288 @@
+body{
+    background-color: #FDF5E6;
+}
+h4{  
+    color: #FFC300; 
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+    
+        color: #FFC300; /* لون النص */
+        background-color: #FFF8E1; /* خلفية خفيفة */
+        border-left: 5px solid #FF5733; /* خط جانبي */
+        padding: 5px 10px; /* مسافة داخلية */
+        font-family: 'Verdana', sans-serif; /* خط بسيط */
+        font-size: 1rem; /* حجم النص */
+        text-align: left; /* محاذاة النص */
+        text-decoration: underline; /* خط سفلي */
+        text-decoration-color: #FFC300; /* لون الخط السفلي */
+        text-decoration-thickness: 2px;
+    }
+    
+    h4:hover {
+        color: #FF5733; /* تغيير لون النص عند التمرير */
+        transform: translateX(5px); /* تحريك النص قليلاً */
+        transition: 0.3s ease; /* تأثير ناعم */
+    }
+    
+
+
+
+
+h3{ 
+   
+   
+   
+    color: #FF5733; 
+    font-size: 1.5rem;
+    margin: 10px 0;
+   
+        color: #FF5733; /* لون النص */
+        background-color: #FFF3E0; /* خلفية فاتحة */
+        padding: 10px; /* مساحة داخلية */
+        border: 2px solid #FFC300; /* حدود صفراء */
+        border-radius: 10px; /* زوايا دائرية */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ظل للنص */
+        font-family: 'Georgia', serif; /* خط مميز */
+        transition: 0.3s ease; /* تأثير الانتقال */
+}
+    
+    h3:hover {
+        background-color: #FFE0B2; /* تغيير الخلفية عند التحويم */
+        transform: translateY(-5px); /* رفع النص قليلاً */
+    }
+    
+
+
+}
+
+
+
+   
+
+
+h2 {
+    font-size: 2.5rem; /* حجم النص كبير */
+    font-weight: bold; /* خط عريض */
+    color: #FF5733; /* لون دافئ */
+    text-align: center; /* توسيط النص */
+    background-color: #FFF3E0; /* خلفية ناعمة */
+    padding: 20px 40px; /* مساحة داخلية حول النص */
+    margin: 50px auto; /* توسيط العنصر نفسه */
+    width: 80%; /* عرض الحاوية */
+    border-radius: 10px; /* زوايا دائرية ناعمة */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+    letter-spacing: 2px; /* زيادة التباعد بين الحروف */
+   
+} 
+ h2:hover {
+    background-color: #FFE0B2; /* تغيير الخلفية عند التحويم */
+    color: #1ABC9C; /* تغيير اللون عند التحويم */
+    transform: scale(1.05); /* تكبير النص قليلاً */
+    transition: all 0.3s ease-in-out; /* تأثير ناعم عند التحويم */
+    text-align: center;
+    display: block;
+    
+}
+
+
+h2::before {
+    content: "🍽️ "; /* رمز شوكة قبل النص */
+    font-size: 1.5rem; /* حجم الرمز */
+    color: #FFC300; /* لون الرمز */
+}
+
+h2::after {
+    content: " 🍴"; /* رمز شوكة بعد النص */
+    font-size: 1.5rem; /* حجم الرمز */
+    color: #FFC300; /* لون الرمز */
+}
+.audio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
+    gap: 30px;
+    width: 80%;
+}
+
+/* تنسيق كل عنصر صوت */
+.audio-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-align: center;
+}
+
+/* تأثيرات عند التحويم على العناصر الصوتية */
+.audio-item:hover {
+    transform: scale(1.05); /* تكبير العنصر عند التحويم */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* تأثير الظل */
+    background-color: #ffccbc; /* تغيير لون الخلفية عند التحويم */
+}
+
+
+/* تخصيص مشغل الصوت (audio) */
+audio {
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffeb3b; /* لون خلفية مشغل الصوت */
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* تأثير عند التحويم على مشغل الصوت */
+audio:hover {
+    background-color: #dd8400; /* تغيير اللون عند التحويم */
+    transform: scale(1.05); /* تكبير مشغل الصوت عند التحويم */
+}
+
+/* تخصيص الأزرار داخل مشغل الصوت */
+audio::-webkit-media-controls-panel {
+    background-color: #ffcc80; /* تغيير لون لوحة الأزرار */
+}
+
+/* تأثيرات عند تشغيل الصوت */
+audio:focus {
+    border: 2px solid #ff5722; /* إضافة حدود ملونة عند التركيز */
+}
+/* تنسيق الفقرات العامة */
+p {
+    font-family: 'Verdana', sans-serif; /* استخدام خط جميل */
+    font-size: 1.1rem; /* تكبير حجم النص */
+    color: #333; /* لون النص الأساسي */
+    line-height: 1.6; /* زيادة المسافة بين الأسطر لجعل القراءة أسهل */
+    text-align: justify; /* محاذاة النص بشكل منظم */
+    margin: 20px 0; /* إضافة مسافة أعلى وأسفل الفقرة */
+    padding: 10px; /* إضافة حشو حول النص */
+    border-left: 4px solid #ff5722; /* إضافة خط ملون على اليسار */
+    background-color: #f9f9f9; /* خلفية فاتحة للفقرة */
+    border-radius: 8px; /* زوايا دائرية للفقرة */
+    transition: all 0.3s ease-in-out; /* إضافة تأثير انتقال سلس */
+}
+
+/* تأثير التحويم على الفقرة */
+p:hover {
+    background-color: #fff3e0; /* تغيير اللون الخلفي عند التحويم */
+    color: #ff5722; /* تغيير لون النص عند التحويم */
+    transform: scale(1.02); /* تكبير الفقرة عند التحويم */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل عند التحويم */
+}
+
+/* تخصيص النص داخل الفقرة */
+p span {
+    font-weight: bold; /* جعل النص داخل العنصر span سميكًا */
+    color: #ff5722; /* تغيير لون النص داخل span */
+}
+
+/* تغيير الخطوط المائلة */
+p em {
+    font-style: italic; /* تطبيق النص المائل */
+    color: #673ab7; /* تغيير لون النص المائل */
+}
+/* تنسيق الرابط */
+a {
+    font-family: 'Arial', sans-serif; /* خط بسيط وجميل */
+    font-size: 1.0rem; /* حجم النص معقول */
+    color: #4CAF50; /* لون نص أخضر فاتح */
+    text-align: center;
+    text-decoration: none; /* إزالة الخط السفلي */
+    padding: 10px 20px; /* إضافة مسافة داخلية حول الرابط */
+    border-radius: 5px; /* زوايا دائرية */
+    background-color: #f9f9f9; /* خلفية فاتحة */
+    border: 2px solid #4CAF50; /* إضافة حدود بلون نص الرابط */
+    transition: all 0.3s ease; /* تأثير انتقالي ناعم */
+    width: fit-content; /* لجعل الروابط تأخذ العرض المناسب */
+    margin: 0 auto; /* مركز النص عمودياً */
+}
+/* تأثير عند التحويم على الرابط */
+a:hover {
+    color: #fff; /* تغيير اللون إلى الأبيض عند التحويم */
+    background-color: #4CAF50; /* تغيير الخلفية إلى اللون الأخضر */
+    border-color: #fff; /* تغيير حدود الرابط إلى الأبيض */
+    transform: scale(1.05); /* تكبير الرابط قليلاً */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل */
+}
+
+/* تأثير عند الضغط على الرابط */
+a:active {
+    color: #4CAF50; /* إعادة اللون الأصلي */
+    background-color: #e8f5e9; /* تغيير الخلفية عند الضغط */
+    border-color: #4CAF50; /* إبقاء الحدود كما هي */
+    transform: scale(1); /* العودة للحجم الأصلي */
+}
+/* تنسيق الصورة */
+img{
+    width: 50%; /* عرض الصورة 100% من العنصر الحاوي */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 15px; /* إضافة زوايا دائرية للصورة */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* إضافة ظل ناعم حول الصورة */
+    transition: all 0.3s ease; /* إضافة تأثيرات انتقالية ناعمة */
+}
+
+/* تأثير عند التحويم على الصورة */
+img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التحويم */
+    filter: brightness(1.1); /* زيادة السطوع عند التحويم */
+}
+
+/* تنسيق الرابط */
+
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h5#m {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input[type="search"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="search"]:focus {
+    border-color: #4CAF50;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.center-content {
+    text-align: center;
+}

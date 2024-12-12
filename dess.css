@@ -1,0 +1,133 @@
+body {
+    background-color: #FFF8DC; /* لون خلفية دافئ (أصفر فاتح) */
+}
+h3 {
+    font-family: 'Verdana', sans-serif; /* نوع الخط */
+    font-size: 1.2em; /* حجم الخط أصغر */
+    color: #8B4513; /* لون بني فاتح يتناسب مع الحلوى */
+    
+    background-color: #FFF8DC; /* خلفية دافئة بلون كريم */
+    padding: 10px; /* مسافة داخلية حول النص */
+    border-radius: 15px; /* زوايا مستديرة */
+    width: 20%; /* عرض المستطيل بنسبة 80% من عرض الصفحة */
+    margin-right: auto; /* محاذاة العنصر إلى اليمين */
+    margin-right: 0; /* تحديد المسافة من الجانب الأيمن */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف لجعل النص يبرز */
+    transition: all 0.3s ease; /* تأثير التمرير */
+}
+
+h3:hover {
+    color: #b4695b; /* تغيير اللون عند التمرير إلى الأحمر الفاتح */
+    background-color: #f3e7a2; /* تغيير الخلفية إلى اللون الذهبي عند التمرير */
+    text-align: center;
+    transform: translateY(-5px); /* تحريك النص قليلاً للأعلى */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+h2 {
+    font-family: 'Verdana', sans-serif; /* نوع الخط */
+    font-size: 1.5em; /* حجم الخط أكبر قليلاً من h3 */
+    color: #a76c41; /* لون بني فاتح يتناسب مع الحلوى */
+    text-align: center; /* محاذاة النص إلى المركز */
+    background-color: #FFF8DC; /* خلفية دافئة بلون كريم */
+    padding: 12px; /* مسافة داخلية حول النص */
+    border-radius: 15px; /* زوايا مستديرة */
+    width: 80%; /* عرض المستطيل بنسبة 80% من عرض الصفحة */
+    margin-left: auto; /* محاذاة العنصر إلى اليمين */
+    margin-right: 0; /* تحديد المسافة من الجانب الأيمن */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف لجعل النص يبرز */
+    transition: all 0.3s ease; /* تأثير التمرير */
+}
+
+h2:hover {
+    color: #ffffffd8; /* تغيير اللون عند التمرير إلى الأحمر الفاتح */
+    background-color: #b6aa69; /* تغيير الخلفية إلى اللون الذهبي عند التمرير */
+    transform: translateY(-5px); /* تحريك النص قليلاً للأعلى */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+h4 {
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    font-size: 1.3em; /* حجم الخط متوسط */
+    color: #D2691E; /* لون بني داكن يتناسب مع الحلوى */
+    text-align: left; /* محاذاة النص إلى اليمين */
+    background-color: #FFF5EE; /* خلفية فاتحة بلون كريمي */
+    padding: 15px; /* مسافة داخلية حول النص */
+    border-radius: 8px; /* زوايا مستديرة بشكل بسيط */
+    width: 25%; /* عرض المستطيل بنسبة 75% من عرض الصفحة */
+    margin: 20px 0; /* مسافة من الأعلى والأسفل */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* ظل خفيف جدا لزيادة الجمالية */
+    transition: all 0.2s ease-in-out; /* تأثير سريع عند التمرير */
+}
+
+h4:hover {
+    color: #ed7a50; /* تغيير اللون عند التمرير إلى اللون البرتقالي الفاتح */
+    background-color: #f2c581; /* تغيير الخلفية إلى اللون الذهبي الفاتح */
+    transform: scale(1.05); /* زيادة الحجم قليلًا عند التمرير */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+
+
+p {
+    font-family: 'Georgia', serif; /* نوع الخط */
+    font-size: 1.2em; /* حجم الخط متوسط */
+    color: #4B0082; /* لون بنفسجي داكن */
+    text-align: justify; /* محاذاة النص بشكل مبرر */
+    background-color: #FFF0F5; /* خلفية بلون وردي فاتح */
+    padding: 12px; /* مسافة داخلية حول النص */
+    border-radius: 10px; /* زوايا مستديرة */
+    width: 80%; /* عرض الفقرة بنسبة 80% من عرض الصفحة */
+    margin: 15px auto; /* مسافة من الأعلى والأسفل مع توسيط العنصر */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    transition: all 0.3s ease-in-out; /* تأثير انتقال عند التمرير */
+}
+
+p:hover {
+    color: #FF1493; /* تغيير اللون إلى وردي فاقع عند التمرير */
+    background-color: #f8e891; /* تغيير الخلفية إلى ذهبي */
+    transform: scale(1.03); /* زيادة الحجم قليلاً عند التمرير */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+a {
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    font-size: 1.1em; /* حجم الخط مناسب للروابط */
+    color: #000000; /* لون الرابط الأزرق */
+    text-decoration: none; /* إزالة التسطير الافتراضي */
+    padding: 8px 12px; /* إضافة مساحة حول الرابط */
+    background-color: #e08372; /* خلفية فاتحة */
+    border-radius: 6px; /* زوايا مستديرة */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف تحت الرابط */
+    transition: all 0.3s ease-in-out; /* تأثير انتقال سلس عند التمرير */
+}
+
+a:hover {
+    color: #ffffff; /* تغيير اللون إلى الأبيض عند التمرير */
+    background-color: #c96c5c; /* تغيير الخلفية إلى اللون البرتقالي */
+    transform: translateY(-2px); /* تحريك الرابط للأعلى قليلاً عند التمرير */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+audio {
+    width: 25%; /* عرض الصوت يأخذ كامل عرض الحاوية */
+    border-radius: 8px; /* زوايا مستديرة */
+    background-color: #f5f5f5; /* خلفية فاتحة */
+    padding: 5px; /* مسافة داخلية بسيطة حول الصوت */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    transition: all 0.3s ease-in-out; /* تأثير سلس عند التمرير */
+}
+
+audio:hover {
+    background-color: #f0e68c; /* تغيير الخلفية إلى اللون الأصفر عند التمرير */
+    transform: scale(1.05); /* تكبير الحجم قليلاً عند التمرير */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+img {
+    width: 40%; /* عرض الصورة يأخذ كامل عرض الحاوية */
+    height: auto; /* الحفاظ على النسبة بين العرض والارتفاع */
+    border-radius: 12px; /* زوايا مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف حول الصورة */
+    transition: all 0.3s ease-in-out; /* تأثير سلس عند التمرير */
+}
+
+img:hover {
+    transform: scale(1.1); /* تكبير الصورة قليلاً عند التمرير */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التمرير */
+}
+

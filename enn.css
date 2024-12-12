@@ -1,0 +1,154 @@
+body{
+    background-color:#e9b38d;
+}
+h1 {
+    text-align: center; /* مركز العنوان */
+    color: #FFF; /* النص باللون الأبيض */
+    font-size: 3em; /* حجم الخط */
+    font-weight: bold; /* النص غامق */
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+    letter-spacing: 2px; /* المسافة بين الحروف */
+    border: 3px solid #FFF; /* حد أبيض */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* زوايا مستديرة */
+    background: rgba(0, 0, 0, 0.2); /* خلفية خفيفة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* ظل حول العنوان لإضافة عمق */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* تأثير التمرير على العنوان */
+h1:hover {
+    background-color: #a7511b; /* تغيير اللون إلى برتقالي فاتح عند التمرير */
+    transform: scale(1.1); /* تكبير العنوان قليلاً */
+}
+h2{
+    
+       
+        color: #FFF; /* النص باللون الأبيض */
+        font-size: 1.5em; /* حجم الخط */
+        font-weight: bold; /* النص غامق */
+        text-transform: capitalize; /* تحويل أول حرف من كل كلمة إلى حرف كبير */
+        
+        letter-spacing: 1px; /* المسافة بين الحروف */
+        padding: 10px;
+        margin: 15px 0;
+        border-bottom: 3px solid #FFF; /* حد سفلي أبيض */
+        background: rgba(0, 0, 0, 0.2); /* خلفية خفيفة لتظليل العنوان */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* ظل خفيف حول العنوان */
+        transition: transform 0.3s ease, color 0.3s ease;
+        display: inline-block;
+    }
+    
+    /* تأثير التمرير على `h2` */
+    h2:hover {
+        color: #76280c; /* تغيير اللون إلى البرتقالي الفاتح عند التمرير */
+        transform: scale(1.02); /* تكبير العنوان بشكل طفيف */
+    }
+    h3 {
+        text-align: left; /* النص يبدأ من اليسار */
+        color: #8B0000; /* لون النص */
+        font-size: 1.5em; /* حجم النص أصغر */
+        font-weight: bold; /* النص غامق */
+        padding: 4px 8px; /* تقليل المسافة داخل الإطار */
+        margin: 6px 0; /* تقليل المسافة بين العنوان والعناصر الأخرى */
+        background: rgba(255, 248, 220, 0.9); /* لون خلفية مناسب */
+        border-left: 3px solid #FF4500; /* حد صغير من اليسار */
+        border-radius: 3px; /* زوايا منحنية خفيفة */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* ظل خفيف جداً */
+        transition: transform 0.2s ease, background 0.2s ease;
+        
+    }
+    
+    img {
+        width: 90%; /* عرض الصورة يتكيف مع الحاوية */
+        height: auto;
+        max-width: 500px; /* أقصى عرض للصورة */
+        height: auto; /* للحفاظ على النسبة */
+        border-radius: 10px; /* زوايا دائرية */
+        border: 3px solid #FF4500; /* إطار حول الصورة */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثيرات انتقال */
+    }
+    
+    /* تأثير عند التمرير */
+    img:hover {
+        transform: scale(1.05); /* تكبير بسيط عند التمرير */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* ظل أكبر عند التمرير */
+    }
+    
+    
+    h4 {
+        text-align: left; /* محاذاة النص لليسار */
+        font-size: 1.4em; /* حجم النص */
+        font-weight: bold; /* النص غامق */
+        color: #8B4513; /* لون النص بني */
+        background: rgba(220, 163, 114, 0.9);; /* خلفية بلون فاتح */
+        padding: 6px 12px; /* مسافة داخلية لزيادة الوضوح */
+        border-left: 4px solid #CD853F; /* شريط جانبي ملون */
+        border-radius: 5px; /* زوايا منحنية */
+        margin: 10px 0; /* مسافة خارجية */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+        transition: transform 0.3s ease, background 0.3s ease; /* تأثير لطيف عند التفاعل */
+    }
+    
+    /* تأثير عند التمرير */
+    h4:hover {
+        background: rgba(244, 164, 96, 0.9); /* تغيير لون الخلفية عند التمرير */
+        transform: scale(1.02); /* تكبير بسيط عند التمرير */
+    }
+    
+    a {
+        text-decoration: none; /* إزالة الخط السفلي */
+        font-size: 1em; /* حجم النص */
+        font-weight: bold; /* جعل النص غامق */
+        color: #8B0000; /* لون النص */
+        padding: 4px 8px; /* مسافة داخلية */
+        border: 2px solid transparent; /* إزالة الحدود الافتراضية */
+        border-radius: 5px; /* زوايا دائرية */
+        transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* تأثيرات انتقال */
+    }
+    
+    /* تأثير عند التمرير */
+    a:hover {
+        background-color: #FFD700; /* خلفية بلون ذهبي */
+        color: #000; /* تغيير لون النص إلى الأسود */
+        border: 2px solid #8B0000; /* إضافة إطار */
+        transform: scale(1.05); /* تكبير بسيط */
+    }
+    audio {
+        width: 100%; /* يجعل مشغل الصوت بعرض الحاوية */
+        max-width: 400px; /* أقصى عرض للمشغل */
+        border: 2px solid #8B0000; /* إطار ملون */
+        border-radius: 10px; /* زوايا دائرية */
+        background-color: #FFD700; /* خلفية بلون ذهبي */
+        padding: 5px; /* مسافة داخلية */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير عند التفاعل */
+    }
+    
+    /* تأثير عند التمرير */
+    audio:hover {
+        transform: scale(1.05); /* تكبير بسيط */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* زيادة الظل */
+    }
+    p {
+        font-family: 'Arial', sans-serif; /* نوع الخط */
+        font-size: 1.1em; /* حجم النص */
+        line-height: 1.6; /* المسافة بين الأسطر */
+        color: #4B0082; /* لون النص */
+        background-color: #FFFACD; /* خلفية الفقرة */
+        padding: 10px 15px; /* مسافة داخلية */
+        border-left: 4px solid #FFD700; /* خط زخرفي على الجانب الأيسر */
+        border-radius: 8px; /* زوايا دائرية */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+        margin: 15px 0; /* مسافة خارجية */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* تأثير عند التفاعل */
+    }
+    
+    /* تأثير عند التمرير */
+    p:hover {
+        background-color: #F0E68C; /* لون خلفية مختلف */
+        transform: translateX(5px); /* تحريك النص قليلاً */
+    }
+    
